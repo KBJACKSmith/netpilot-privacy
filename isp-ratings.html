@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetPilot ISP Ratings Methodology</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #1f2937;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 40px 20px 70px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 36px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-top: 32px;
+    }
+
+    .updated {
+      color: #6b7280;
+    }
+
+    .note {
+      background: #f1f5fb;
+      border-radius: 10px;
+      padding: 14px 18px;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>NetPilot ISP Ratings — Methodology</h1>
+      <p class="updated">Last updated: November 7, 2026</p>
+
+      <h2>What the ratings show</h2>
+      <p>For each internet service provider (ISP) and place (country, region or city), NetPilot shows statistics calculated
+      from speed tests run by NetPilot users who share anonymous results: the median download speed, median upload speed and
+      median ping, the typical range (10th to 90th percentile), consistency, and the number of tests used.</p>
+
+      <h2>Where the data comes from</h2>
+      <ul>
+        <li>Each shared result contains download, upload, ping, jitter, connection type, Wi-Fi band, app version, platform and
+        the hour of the test. See the <a href="index.html">Privacy Policy</a>.</li>
+        <li>The ISP and the approximate country, region and city are looked up on our server from the test's internet (IP)
+        address using DB-IP Lite. The IP address is not stored.</li>
+        <li>Users can correct their ISP in the app. Results with impossible values are rejected.</li>
+      </ul>
+
+      <h2>How the numbers are calculated</h2>
+      <ul>
+        <li><strong>Median:</strong> half of the tests were faster and half slower. Medians are less affected by unusual
+        results than averages.</li>
+        <li><strong>Typical range:</strong> the 10th to 90th percentile of results.</li>
+        <li><strong>Consistency:</strong> the share of tests that reached at least half of the median download speed.</li>
+        <li><strong>Periods:</strong> the last 30 days and the last 90 days, recalculated every night (UTC).</li>
+        <li><strong>Minimum tests:</strong> a rating is only shown when there are at least 50 tests for a city, 30 for a
+        region and 20 for a country in that period. Otherwise the app says there are not enough tests yet.</li>
+      </ul>
+
+      <h2>Limitations</h2>
+      <p>Results depend on who tested, where and when, on Wi-Fi or mobile signal, on the device, and on the plan each user pays
+      for. A lower median can reflect cheaper plans or weaker Wi-Fi rather than the ISP's network. IP-based location is
+      approximate and can place a test in a nearby city. Ratings are statistics for information only, not an official
+      measurement or endorsement.</p>
+
+      <h2>Opting out</h2>
+      <p>You can stop sharing results at any time in NetPilot: Settings &gt; "Share anonymous results".</p>
+
+      <h2>Attribution</h2>
+      <p>IP geolocation by <a href="https://db-ip.com">DB-IP</a>, licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
+      <p><a href="index.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+    </div>
+  </div>
+</body>
+</html>
